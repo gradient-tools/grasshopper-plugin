@@ -3,10 +3,11 @@ using Grasshopper.Kernel;
 using Rhino.Geometry;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace GradientTools
 {
-    public class MissingComponents : GH_Component
+    public class PluginRisk : GH_Component
     {
         /// <summary>
         /// Each implementation of GH_Component must provide a public 
@@ -15,10 +16,10 @@ namespace GradientTools
         /// Subcategory the panel. If you use non-existing tab or panel names, 
         /// new tabs/panels will automatically be created.
         /// </summary>
-        public MissingComponents()
-          : base("Missing Components", 
-                "Missing Components",
-                "Get the list of missing components",
+        public PluginRisk()
+          : base("Plugin Risk", 
+                "Plugin Risk",
+                "Find out the unendorsed plugins used on this canvas",
                 "Gradient Tools", 
                 "Document")
         {
@@ -36,6 +37,8 @@ namespace GradientTools
         /// </summary>
         protected override void RegisterOutputParams(GH_Component.GH_OutputParamManager pManager)
         {
+            pManager.AddTextParameter("Component Names", "Component names", "Component names", GH_ParamAccess.list);
+            pManager.AddTextParameter("Category Names", "Category names", "Category names", GH_ParamAccess.list);
         }
 
         /// <summary>
@@ -45,6 +48,35 @@ namespace GradientTools
         /// to store data in output parameters.</param>
         protected override void SolveInstance(IGH_DataAccess DA)
         {
+            GH_Document doc = Grasshopper.Instances.ActiveCanvas.Document;
+
+            List<String> categories = new List<String>();
+            List<String> components = new List<String>();
+
+            if (doc != null)
+            {
+                foreach (IGH_Component component in doc.Objects.OfType<IGH_Component>())
+                {
+                    string componentName = component.NickName;
+                    if (componentName != "Plugin Risk")
+                    {
+                        components.Add(componentName);
+                        if (component.HasCategory)
+                        {
+                            string category = component.Category;
+                            categories.Add(category);
+                        }
+                    }
+
+                    
+                    
+                    
+                }
+            }
+
+            DA.SetDataList("Component Names", components);
+            DA.SetDataList("Category Names", categories);
+
         }
 
         /// <summary>
