@@ -9,17 +9,6 @@
     <PackageIcon>background.png</PackageIcon>
     <ApplicationIcon>favicon.ico</ApplicationIcon>
   </PropertyGroup>
-	
-  <ItemGroup>
-    <Content Include="favicon.ico" />
-  </ItemGroup>
-	
-  <ItemGroup>
-    <None Include="..\..\..\Users\devan\Downloads\background.png">
-      <Pack>True</Pack>
-      <PackagePath>\</PackagePath>
-    </None>
-  </ItemGroup>
   
   <ItemGroup>
     <PackageReference Include="Grasshopper" Version="7.13.21348.13001" IncludeAssets="compile;build" />
