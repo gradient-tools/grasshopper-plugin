@@ -8,7 +8,7 @@ At the paste it at the following location
 
 ```C:\Users\{username}\AppData\Roaming\Grasshopper\Libraries```
 
-If you build the project locally, the .gha file will be copied to the above location
+If you build the [project](GradientTools) locally, the .gha file will be copied to the above location
 automatically.
 
 ### Tools in the plugin
