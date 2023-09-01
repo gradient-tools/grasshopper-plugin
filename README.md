@@ -2,7 +2,7 @@ Gradient Tools Grasshopper plugin for Rhino 7
 
 I started this plugin to build a set of tools to help me with my daily work. I will this plugin on food4rhino and social media if it grows to have more tools. Till then, to install it copy the following file
 
-[GradientTools.rha](GradientTools/GradientTools.gha)
+[GradientTools.gha](GradientTools/GradientTools.gha)
 
 At the paste it at the following location
 
