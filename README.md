@@ -11,7 +11,7 @@ At the paste it at the following location
 If you build the project locally, the .gha file will be copied to the above location
 automatically.
 
-## Tools
+### Tools in the plugin
 
 | Sub-category |Description |Icon|
 | --- | --- |---|
