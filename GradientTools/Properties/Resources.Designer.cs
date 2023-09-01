@@ -63,9 +63,19 @@ namespace GradientTools.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap logo_gradient_24_x_24 {
+        internal static System.Drawing.Bitmap delete_scribbles {
             get {
-                object obj = ResourceManager.GetObject("logo_gradient_24_x_24", resourceCulture);
+                object obj = ResourceManager.GetObject("delete_scribbles", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap gradient {
+            get {
+                object obj = ResourceManager.GetObject("gradient", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

@@ -42,7 +42,7 @@
   </ItemGroup>
   
   <Target Name="PostBuild" AfterTargets="PostBuildEvent">
-    <Exec Command="Copy &quot;$(TargetPath)&quot; &quot;C:\Users\devan\AppData\Roaming\Grasshopper\Libraries\$(ProjectName).gha&quot;&#xD;&#xA;Erase &quot;$(TargetPath)&quot;" />
+    <Exec Command="Copy &quot;$(TargetPath)&quot;&#xD;&#xA;Copy &quot;$(TargetPath)&quot; &quot;C:\Users\devan\AppData\Roaming\Grasshopper\Libraries\$(ProjectName).gha&quot;&#xD;&#xA;Erase &quot;$(TargetPath)&quot;" />
   </Target>
 
 </Project>

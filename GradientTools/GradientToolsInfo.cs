@@ -10,7 +10,7 @@ namespace GradientTools
         public override string Name => "Gradient Tools";
 
         //Return a 24x24 pixel bitmap to represent this GHA library.
-        public override Bitmap Icon => Properties.Resources.logo_gradient_24_x_24;
+        public override Bitmap Icon => Properties.Resources.gradient;
 
         //Return a short string describing the purpose of this GHA library.
         public override string Description => "";
