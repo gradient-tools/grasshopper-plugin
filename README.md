@@ -13,6 +13,6 @@ automatically.
 
 ### Tools in the plugin
 
-| Sub-category |Description |Icon|
-| --- | --- |---|
-| Delete Scribbles | Rid active canvas of all the scribbles |![delete scribbles](icons/delete_scribbles.png)|
+| Sub-category |Name|Description |Icon|
+| --- | --- |---|---|
+| Document | Delete Scribbles | Rid active canvas of all the scribbles |![delete scribbles](icons/delete_scribbles.png)|
